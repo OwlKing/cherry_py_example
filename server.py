@@ -1,10 +1,12 @@
 import cherrypy
+import os
 
 
 class HelloWorld(object):
     @cherrypy.expose
     def index(self):
-        return "Hello world!"
+        hello = os.getenv("GITHUB_USER")
+        return hello
 
 
 if __name__ == '__main__':

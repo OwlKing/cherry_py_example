@@ -1,0 +1,1 @@
+git clone https://github.com/$GITHUB_USER/cherry_py_example.git
